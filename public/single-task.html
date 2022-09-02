@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fonts awesome -->
+    <script src="https://kit.fontawesome.com/8fd0219ad4.js" crossorigin="anonymous"></script>
+
+    <!-- integrating css styles -->
+    <link rel="stylesheet" href="./styles.css">
+    <title>Task</title>
+</head>
+<body>
+    <a href="/">
+        <div class="back-home">
+            <i class="fa-solid fa-arrow-left"></i>
+        </div>
+    </a>
+    <div class="main-container">
+        <form id="form" class="form second">
+            <legend>Edit the task</legend>
+            <div class="input-wrapper">
+                <label for="update-name">Task Name :</label>
+                <input type="text" id="update-name" name="update-task">
+            </div>
+            <div class="input-wrapper">
+                <label for="completed">Completed :</label>
+                <input type="checkbox" class="checkbox" id="completed">
+            </div>
+            <button type="submit" class="form-btn">Update</button>
+            <div id="form-alert"></div>
+        </form>
+    </div>
+</body>
+
+<!-- integrating axios -->
+<script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+></script>
+
+<!-- js script for the app -->
+<script type="module" src="./single-task.js"></script>
+
+</html>

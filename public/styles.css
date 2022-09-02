@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;800;900&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F9DFDC;
+}
+
+input{
+    width: 75%;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+input:focus{
+    outline: 2px solid #0C4271;
+    outline-offset: -2px;
+}
+
+button{
+    height: 100%;
+    width: 25%;
+    background-color: #fff;
+    border: none;
+    background-color: #0C4271;
+    border-radius: 0 5px 5px 0;
+    font-size: 1.1rem;
+    letter-spacing: -0.05rem;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+h5{
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.text-success{
+    color: rgb(0, 94, 0);
+    background-color: lightgreen;
+    border: 1px solid rgb(0, 94, 0);
+}
+
+.text-failed{
+    color: rgb(187, 0, 0);
+    background-color: lightcoral;
+    border: 1px solid rgb(187, 0, 0);
+}
+
+.text-failed,
+.text-success{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+.back-home{
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: #0A81AB;
+    font-size: 1.7rem;
+    border-radius: 50%;
+    border: 3px solid #0C4271;
+}
+
+
+/* main page */
+
+.main-container{
+    height: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.main-container .form{
+    height: 11rem;
+    width: 100%;
+    background-color: #0A81AB;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 0 7px black;
+}
+
+.main-container .form legend{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 30px;
+    letter-spacing: .1rem;
+    color: whitesmoke;
+}
+
+.main-container .form .input-container{
+    height: 45px;
+    width: 80%;
+    display: flex;
+    margin-top: 20px;
+}
+
+.main-container .tasks-container{
+    height: auto;
+    width: 100%;
+}
+
+
+.main-container  .tasks-container .single-task{
+    height: 60px;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0A81AB;
+    border-radius: 20px;
+    box-shadow: 0 0 3px black;
+    transition: .3s ease box-shadow;
+    padding: 20px;
+}
+
+.main-container .tasks-container > div:first-of-type{
+    margin-top: 50px;
+}
+
+.main-container .tasks-container > div:last-of-type{
+    margin-bottom: 50px;
+}
+
+
+.main-container  .tasks-container .completed-task p {
+    text-decoration: line-through;
+}
+
+.main-container  .tasks-container .single-task:hover{
+    box-shadow: 0 0 7px black;
+}
+
+.main-container  .tasks-container .single-task .single-task-left{
+    display: flex;
+    align-items: center;
+}
+
+.main-container  .tasks-container .single-task .single-task-left p{
+    font-size: 1.2rem;
+    color: whitesmoke;
+    letter-spacing: .1rem;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+
+.main-container  .tasks-container .single-task .single-task-left i{
+    display: inline-block;
+    font-size: 1.3rem;
+    color: rgb(138, 231, 0);
+    /* display: none; */
+}
+
+.main-container  .tasks-container .single-task .icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-container  .tasks-container .single-task .icons i{
+    font-size: 1.2rem;
+}
+
+.main-container  .tasks-container .single-task .icons .fa-pen-to-square{
+    color: rgb(138, 231, 0);
+    cursor: pointer;
+}
+
+.main-container  .tasks-container .single-task .icons:nth-child(2){
+    color: red;
+    cursor: pointer;
+}
+
+/* update page */
+
+.form .input-wrapper{
+    height: 45px;
+    margin-top: 20px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.form.second{
+    height: 16rem;
+}
+
+.form .input-wrapper label{
+    color: whitesmoke;
+    font-size: 1.2rem;
+}
+
+.form .input-wrapper input:not(.checkbox){
+    width: 65%;
+    border-radius: 10px;
+    /* height: 40px; */
+}
+
+.form .input-wrapper input.checkbox{
+    height: 20px;
+    width: 30px;
+    margin-left: -40px;
+}
+
+.form .input-wrapper input.checkbox:hover{
+    outline: none;
+}
+
+.form .form-btn{
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 50px;
+    letter-spacing: .1rem;
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 770px) {
+    .main-container{
+        width: 40rem;
+    }
+
+    .main-container  .tasks-container .single-task{
+        height: 70px;
+    }
+
+    button{
+        letter-spacing: 0.05rem;
+    }
+
+    .text-failed,
+    .text-success{
+        width: 400px;
+    }
+}

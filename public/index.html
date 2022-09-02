@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- integrating the fonts awesome icons -->
+    <script src="https://kit.fontawesome.com/8fd0219ad4.js" crossorigin="anonymous"></script>
+    
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <form class="form" method="post" id="form">
+            <legend>Task Manager</legend>
+            <div class="input-container">
+                <input type="text" name="task" id="input-task" placeholder="e.g walk the dog" autocomplete="false">
+                <button type="submit" id="submit-btn">Submit</button>
+            </div>
+            <div id="form-alert"></div>
+        </form>
+        <div id="list-of-tasks" class="tasks-container"></div>
+    </div>
+</body>
+
+<!-- integrating axios -->
+<script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+></script>
+
+<!-- js script for the app -->
+<script type="module" src="./index.js"></script>
+
+</html>
