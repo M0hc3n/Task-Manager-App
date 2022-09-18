@@ -1,13 +1,12 @@
 # Task-Manager-App
 this is a simple Task Manager app created using plain html , css and vanilla js in the front-end, express js and mongodb in the backend. It is a re-creation of John Smilga's task manager, I hope that you will enjoy it !
 
-# How to install:
-  run the following : <br /> 
-    - *git clone https://github.com/Mohcen2311/Task-Manager-App.git* <br />
-    - *cd Task-Manager-App* <br />
-    - *npm install* <br />
-    - *nodemon* <br />
-    
+### Installation : ###
+```git clone https://github.com/Mohcen2311/Task-Manager-App.git``` <br>
+```cd Task-Manager-App``` <br>
+```npm install``` <br>
+```nodemon``` <br>
+
 # Live Preview:
 
 
